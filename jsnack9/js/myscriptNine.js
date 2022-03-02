@@ -1,25 +1,34 @@
 const arrayNumbers = [];
+
 const arrayOdd = [];
 const arrayEven = [];
 
-/* const lengthOdd =  arrayOdd.legth = 200;
-const legthEven = arrayEven.legth = 200; */
+
 
 let sum = 0;
 while(sum < 200){
-    const userNUmber = parseInt(prompt("Inserisci un numero"));
-    arrayNumbers.push(userNUmber);
-    sum += userNUmber;
+    const userNumber = parseInt(prompt("Inserisci un numero"));
+    arrayNumbers.push(userNumber);
+    sum += userNumber;
 }
 
 console.log(arrayNumbers);
 console.log(sum);
 
+console.log("Bonus");
 
-/* if(((arrayOdd.length < 200) && (arrayEven.length < 200)) && ((userNUmber % 2) == 0)){
-    arrayOdd.push(userNUmber);
-} else if ( ((arrayOdd.length < 200) && (arrayEven.length < 200)) && ((userNUmber % 2) != 0) ){
-        arrayEven.push(userNUmber);
-} else{    
-    arrayNumbers.push(userNUmber);    
-} */
+let sumBonus = 0;
+while(sumBonus < 200){
+    const userNumberBonus = parseInt(prompt("Inserisci un numero (es bonus)"));
+    if ((userNumberBonus % 2) == 0){
+        arrayEven.push(userNumberBonus);
+    } else{
+        arrayOdd.push(userNumberBonus);
+    } 
+    sumBonus += userNumberBonus;
+}
+
+console.log(arrayOdd);
+console.log(arrayEven);
+console.log(sumBonus);
+
