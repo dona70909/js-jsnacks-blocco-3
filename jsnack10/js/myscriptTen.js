@@ -1,6 +1,5 @@
 const firstN = parseInt(prompt("Inserisci un numero"));
 
-
 for (let i = 0; i<firstN; i++){ 
     const array = []; 
     while(array.length < 10){
@@ -21,10 +20,11 @@ const L = parseInt(prompt("Inserisci il valore della somma degli elementi intern
 for(let i = 0; i<N; i++){
     const nArray = [];
     let sumElements = 0;
-    while((nArray.length < M) && (sumElements > L)){
+    while((nArray.length < M) || (sumElements > L)){
         const randomNumberM = Math.floor((Math.random() * 4532) + 4);
-        sumElements += randomNumberM;
         nArray.push(randomNumberM);
+        sumElements += randomNumberM;
+        console.log(sumElements);
     }
     console.log(nArray);
     console.log("Array n. " + i);
