@@ -21,10 +21,33 @@ const L = parseInt(prompt("Inserisci il valore della somma degli elementi intern
 for(let i = 0; i<N; i++){
     const nArray = [];
     let sumElements = 0;
-    while((nArray.length < M) && (sumElements < L)){
+    while((nArray.length < M) && (sumElements > L)){
         const randomNumberM = Math.floor((Math.random() * 4532) + 4);
+        sumElements += randomNumberM;
         nArray.push(randomNumberM);
     }
     console.log(nArray);
+    console.log("Array n. " + i);
+}
+
+
+/* bonus 2 */
+console.log("Second Bonus");
+
+const Ndue = parseInt(prompt("Quanti array vuoi creare?( numero N )"));
+
+const Mdue = parseInt(prompt("Quanti elementi vuoi nell' Array? (numero M"));
+
+const Ldue = parseInt(prompt("Inserisci il valore della somma degli elementi interni a ciascuno Array (numero L)"));
+
+for(let i = 0; i< Ndue; i++){
+    const nArrayDue = [];
+    let sumElementsDue = 0;
+    while((nArrayDue.length <  Mdue) && (sumElementsDue < Ldue)){
+        const randomNumberMdue = Math.floor((Math.random() * 4532) + 4);
+        sumElementsDue += randomNumberMdue;
+        nArrayDue.push(randomNumberMdue);
+    }
+    console.log(nArrayDue);
     console.log("Array n. " + i);
 }
