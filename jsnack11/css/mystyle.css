@@ -1,0 +1,14 @@
+#my-red{
+    color: red;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+#my-green{
+    color: green;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
