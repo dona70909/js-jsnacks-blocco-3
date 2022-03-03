@@ -1,5 +1,13 @@
 
-const arrayNumbers = [1,2,5,7,10,23,65];
+const arrayNumbers = [];
+
+function randomNumber(max,min){
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+for (let i = 0; i< 10;i++){
+    arrayNumbers.push(randomNumber(100,1));
+}
 
 function checkEvenOdd(number){
     if((number % 2) == 0){
