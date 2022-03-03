@@ -24,7 +24,9 @@ for(let i = 0; i < arrayNumbers.length; i++){
 
     if(checkEvenOdd(arrayNumbers[i])){
         divRed.innerHTML += arrayNumbers[i];
+        divRed.innerHTML += (" ");
     } else {
         divGreen.innerHTML += arrayNumbers[i];
+        divGreen.innerHTML += (" ");
     }
 }
