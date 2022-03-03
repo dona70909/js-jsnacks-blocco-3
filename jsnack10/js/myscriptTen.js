@@ -51,3 +51,4 @@ for(let i = 0; i< Ndue; i++){
     console.log(nArrayDue);
     console.log("Array n. " + i);
 }
+
