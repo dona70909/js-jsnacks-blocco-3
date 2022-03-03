@@ -13,10 +13,10 @@ const divRed = document.getElementById("my-red");
 const divGreen = document.getElementById("my-green");
 
 for(let i = 0; i < arrayNumbers.length; i++){
-    
+
     if(checkEvenOdd(arrayNumbers[i])){
-        divRed.innerHTML = arrayNumbers[i];
+        divRed.innerHTML += arrayNumbers[i];
     } else {
-        divGreen.innerHTML = arrayNumbers[i];
+        divGreen.innerHTML += arrayNumbers[i];
     }
 }
