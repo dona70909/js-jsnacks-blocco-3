@@ -1,4 +1,8 @@
 
+function randomNumber(max,min){
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
 function checkSum (x,y){
     sum = x + y;
     if((sum % 2 ) === 0){
@@ -8,4 +12,4 @@ function checkSum (x,y){
     return false;
 }
 
-console.log(checkSum(10,20));
+console.log(checkSum(randomNumber(10,20),randomNumber(7,14)));
